@@ -2,7 +2,7 @@
 
 namespace Eventable;
 
-define(EVENTABLE_API_URL, 'http://localhost:8050/v1');
+define(EVENTABLE_API_URL, 'http://api.eventable.com/v1');
 
 class Eventable
 {
