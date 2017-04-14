@@ -2,7 +2,7 @@
 
 namespace Eventable;
 
-define(EVENTABLE_API_URL, 'http://api.eventable.com/v1');
+define(EVENTABLE_API_URL, 'https://api.eventable.com/v1');
 
 class Eventable
 {
@@ -131,9 +131,11 @@ class Eventable
 
         if ($response["status"] == 400) {
             $content = json_decode($response['content']);
-            echo var_dump($content);
             if ($content->detail == "Event already exists.") {
                 return true; # event was already added, but it's still good to return true
+            }
+            else{
+                throw new EventableSDKException($content);
             }
         }
 
