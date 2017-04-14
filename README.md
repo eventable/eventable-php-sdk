@@ -28,8 +28,8 @@ Now you have an Eventable instance, and can use its methods to interact with the
 To create an event, pass an array of event data to the `create_event()` method.
 ```php
 $event_data = array(
-    'title'=>'PHP SDK Info Session',
-    "description" =>"Come learn about Eventable's PHP SDK!",
+    "title"=>"PHP SDK Info Session",
+    "description"=>"Come learn about Eventable's PHP SDK!",
     "start_time"=>"2017-05-03T13:00",
     "end_time"=>"2017-05-03T13:30",
     "external_id"=>"REFRESH2"
@@ -43,9 +43,9 @@ Similarly, to update an event, you pass an array of event data to the `update_ev
 
 ```php
 $event_data = array(
-    'id'=>'58a1efb2b2afda30ca7f19f2',
-    'title'=>'PHP SDK Info Session',
-    "description" =>"Come learn about Eventable's PHP SDK!",
+    "id"=>"58a1efb2b2afda30ca7f19f2",
+    "title"=>"PHP SDK Info Session",
+    "description"=>"Come learn about Eventable's PHP SDK!",
     "start_time"=>"2017-05-03T13:00",
     "end_time"=>"2017-05-03T14:00"
 );
@@ -57,9 +57,9 @@ Deleting an event works the same as updating an event. You pass an array of even
 
 ```php
 $event_data = array(
-    'id'=>'58a1efb2b2afda30ca7f19f2',
-    'title'=>'PHP SDK Info Session',
-    "description" =>"Come learn about Eventable's PHP SDK!",
+    "id"=>"58a1efb2b2afda30ca7f19f2",
+    "title"=>'PHP SDK Info Session",
+    "description"=>"Come learn about Eventable's PHP SDK!",
     "start_time"=>"2017-05-03T13:00",
     "end_time"=>"2017-05-03T14:00"
 );
@@ -77,9 +77,9 @@ $subscriber = $eventableAPI->get_or_create_subscriber_by_alias('will@example.com
 You can also simply add subscribers to existing events by alias, which will create a new subscriber if they don't already exist.
 ```php
 $event_data = array(
-    'id'=>'58a1efb2b2afda30ca7f19f2',
-    'title'=>'PHP SDK Info Session',
-    "description" =>"Come learn about Eventable's PHP SDK!",
+    "id"=>"58a1efb2b2afda30ca7f19f2",
+    "title"=>"PHP SDK Info Session",
+    "description"=>"Come learn about Eventable's PHP SDK!",
     "start_time"=>"2017-05-03T13:00",
     "end_time"=>"2017-05-03T14:00"
 );
@@ -91,9 +91,9 @@ $was_added = $eventableAPI->add_event_to_subscriber_by_alias($event_data, 'will@
 Similarly, you can also remove subscribers from events by subscriber alias. In this case, the event and subscriber must both already exist _and_ the event must have been previously added to the subscriber.
 ```php
 $event_data = array(
-    'id'=>'58a1efb2b2afda30ca7f19f2',
-    'title'=>'PHP SDK Info Session',
-    "description" =>"Come learn about Eventable's PHP SDK!",
+    "id"=>"58a1efb2b2afda30ca7f19f2",
+    "title"=>"PHP SDK Info Session",
+    "description"=>"Come learn about Eventable's PHP SDK!",
     "start_time"=>"2017-05-03T13:00",
     "end_time"=>"2017-05-03T14:00"
 );
