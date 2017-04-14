@@ -71,7 +71,7 @@ $event = $eventableAPI->delete_event($event_data);
 
 Creating a subscriber is easy, you just need to pass an alias to the API like this
 ```php
-$subscriber = $e->get_or_create_subscriber_by_alias('will@example.com');
+$subscriber = $eventableAPI->get_or_create_subscriber_by_alias('will@example.com');
 ```
 
 You can also simply add subscribers to existing events by alias, which will create a new subscriber if they don't already exist.
